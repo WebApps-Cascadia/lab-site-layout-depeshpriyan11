@@ -104,11 +104,15 @@ nav {
 }
 
 /* STACK LINKS ON LEFT */
+nav ul {
+    border-right: solid thin #40A7A5;
+    padding-right: 10px;
+}
+
 nav li {
     display: block;
     padding: 5px 1em;
-    border-right: none;
-    border-bottom: solid thin #40A7A5;
+    border-bottom: none;
 }
 
 nav li:last-child {
