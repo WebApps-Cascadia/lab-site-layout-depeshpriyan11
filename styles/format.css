@@ -1,11 +1,10 @@
 /************************************ 
          PRZ Formatting CSS
-    (see PRZ_Style_Guide document)
 *************************************/
 
 
 /* ============================= */
-/* Client Login Nav Formatting   */
+/* Client Nav Formatting         */
 /* ============================= */
 
 nav#client {
@@ -17,16 +16,11 @@ nav#client {
     background-color: #D7EAE4;
 }
 
-/* horizontal list items */
 nav#client li {
     display: inline;
     padding-left: 0.5em;
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
 }
 
-/* reset ul + time inside client nav */
 nav#client ul,
 nav#client time {
     margin: 0;
@@ -36,7 +30,7 @@ nav#client time {
 
 
 /* ============================= */
-/* Overall Page Formatting       */
+/* Page Formatting               */
 /* ============================= */
 
 body {
@@ -47,31 +41,21 @@ body {
     border: solid black thick;
 }
 
-p {
-    padding: 0.5em;
-}
+p { padding: 0.5em; }
 
-h1, h2, h3 {
-    padding-bottom: 0.5em;
-}
+h1, h2, h3 { padding-bottom: 0.5em; }
 
 ul, ol {
     padding-left: 1.5em;
     padding-bottom: 0.5em;
 }
 
-a {
-    color: #084048;
-}
+/* links */
+a { color: #084048; }
+a:visited { color: #10A7A5; }
+a:hover { color: #CC6600; }
 
-a:visited {
-    color: #10A7A5;
-}
-
-a:hover {
-    color: #CC6600;
-}
-
+/* definition list */
 dt {
     font-size: 1.1em;
     font-weight: bold;
@@ -86,16 +70,14 @@ dd {
 
 
 /* ============================= */
-/* Header Formatting             */
+/* Header                       */
 /* ============================= */
 
 header {
     margin: 10px 0 0 10px;
     padding: 10px 0 0 250px;
     height: 99px;
-    background-image: url(../images/przlogo.gif);
-    background-repeat: no-repeat;
-    background-position: top left;
+    background: url(../images/przlogo.gif) no-repeat top left;
 }
 
 header h1,
@@ -103,10 +85,7 @@ header h2 {
     font-family: Garamond, serif;
 }
 
-header h1 {
-    font-size: 2em;
-}
-
+header h1 { font-size: 2em; }
 header h2 {
     font-size: 1.6em;
     text-align: center;
@@ -115,12 +94,13 @@ header h2 {
 
 
 /* ============================= */
-/* Navigation Formatting         */
+/* Navigation (styling only)     */
 /* ============================= */
 
 nav {
     font-family: Gil Sans, Arial, Helvetica, sans-serif;
     font-size: 1.2em;
+    padding: 10px 20px;
 }
 
 nav li {
@@ -129,40 +109,27 @@ nav li {
     border-right: solid thin #40A7A5;
 }
 
-/* remove border from last item */
 nav li:last-child {
     border-right: none;
 }
 
 
 /* ============================= */
-/* Main Section Formatting       */
+/* Main                         */
 /* ============================= */
 
 main {
     padding: 20px;
-    background-image: url(../images/prz_watermark.gif);
-    background-repeat: no-repeat;
-    background-position: center right;
+    background: url(../images/prz_watermark.gif) no-repeat center right;
 }
 
-main h1,
-main h2,
-main h3 {
+main h1, main h2, main h3 {
     font-family: Gil Sans, Arial, Helvetica, sans-serif;
 }
 
-main h1 {
-    font-size: 1.6em;
-}
-
-main h2 {
-    font-size: 1.3em;
-}
-
-main h3 {
-    font-size: 1.1em;
-}
+main h1 { font-size: 1.6em; }
+main h2 { font-size: 1.3em; }
+main h3 { font-size: 1.1em; }
 
 ul.bigger li {
     font-size: 1.2em;
@@ -180,7 +147,7 @@ ol ol {
 
 
 /* ============================= */
-/* Footer Formatting             */
+/* Footer                       */
 /* ============================= */
 
 footer {

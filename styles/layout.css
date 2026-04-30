@@ -1,20 +1,55 @@
-/************************************************ 
-              PRZ Positioning CSS
-   (see PRZ_Style_Guide - Positioning document)
-*************************************************/
+/* ============================= */
+/* FLEXBOX OVERALL LAYOUT        */
+/* ============================= */
 
-/* Positioning of the Header, Nav, Main, Footer */
-
-
-
-
-
-/* End Positioning of the Header, Nav, Main, Footer
- ********************
-/* Positioning of Client Login Nav box */
+body {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    min-width: 850px;
+}
 
 
+/* Header full width */
+header {
+    flex-basis: 100%;
+    order: 1;
+}
 
 
+/* Nav LEFT side */
+nav {
+    flex: 1;
+    order: 2;
+}
 
-/* End Positioning of Client Login Nav box */
+
+/* Main RIGHT side (fixes your issue) */
+main {
+    flex: 4;
+    order: 3;
+}
+
+
+/* Footer full width bottom */
+footer {
+    flex-basis: 100%;
+    order: 4;
+}
+
+
+/* Stack nav items vertically if needed */
+nav ul {
+    display: block;
+}
+
+
+/* ============================= */
+/* Client Nav Positioning        */
+/* ============================= */
+
+nav#client {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
