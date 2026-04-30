@@ -55,7 +55,7 @@ a { color: #084048; }
 a:visited { color: #10A7A5; }
 a:hover { color: #CC6600; }
 
-/* definition list */
+/* definition lists */
 dt {
     font-size: 1.1em;
     font-weight: bold;
@@ -94,7 +94,7 @@ header h2 {
 
 
 /* ============================= */
-/* Navigation (styling only)     */
+/* Navigation (VERTICAL LINKS)   */
 /* ============================= */
 
 nav {
@@ -103,14 +103,16 @@ nav {
     padding: 10px 20px;
 }
 
+/* STACK LINKS ON LEFT */
 nav li {
-    display: inline;
+    display: block;
     padding: 5px 1em;
-    border-right: solid thin #40A7A5;
+    border-right: none;
+    border-bottom: solid thin #40A7A5;
 }
 
 nav li:last-child {
-    border-right: none;
+    border-bottom: none;
 }
 
 

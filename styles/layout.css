@@ -10,42 +10,42 @@ body {
 }
 
 
-/* Header full width */
+/* HEADER (top full width) */
 header {
     flex-basis: 100%;
     order: 1;
 }
 
 
-/* Nav LEFT side */
+/* NAV (LEFT SIDE) */
 nav {
     flex: 1;
     order: 2;
 }
 
 
-/* Main RIGHT side (fixes your issue) */
+/* MAIN (RIGHT SIDE - IMPORTANT) */
 main {
     flex: 4;
     order: 3;
 }
 
 
-/* Footer full width bottom */
+/* FOOTER (bottom full width) */
 footer {
     flex-basis: 100%;
     order: 4;
 }
 
 
-/* Stack nav items vertically if needed */
+/* NAV LIST (safety fallback) */
 nav ul {
     display: block;
 }
 
 
 /* ============================= */
-/* Client Nav Positioning        */
+/* CLIENT NAV POSITIONING        */
 /* ============================= */
 
 nav#client {
