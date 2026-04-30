@@ -17,13 +17,16 @@ nav#client {
     background-color: #D7EAE4;
 }
 
-/* stack items horizontally */
+/* horizontal list items */
 nav#client li {
     display: inline;
     padding-left: 0.5em;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
 }
 
-/* remove spacing/border from list + time */
+/* reset ul + time inside client nav */
 nav#client ul,
 nav#client time {
     margin: 0;
@@ -40,44 +43,44 @@ body {
 	color: #000000;
 	background-color: #FFFFFF;
 	font: 12pt Georgia, "Times New Roman", Times, serif;
-    margin:15px;
-    border:solid black thick;
+    margin: 15px;
+    border: solid black thick;
 }
 
-p{
-    padding:.5em;
+p {
+    padding: 0.5em;
 }
 
-h1, h2, h3{
-    padding-bottom:.5em;
+h1, h2, h3 {
+    padding-bottom: 0.5em;
 }
 
-ul, ol{
-    padding-left:1.5em;
-    padding-bottom: .5em;
+ul, ol {
+    padding-left: 1.5em;
+    padding-bottom: 0.5em;
 }
 
 a {
-    color:#084048;
+    color: #084048;
 }
 
 a:visited {
-    color:#10A7A5;
+    color: #10A7A5;
 }
 
 a:hover {
-    color:#CC6600;
+    color: #CC6600;
 }
 
 dt {
-    font-size:1.1em;
+    font-size: 1.1em;
     font-weight: bold;
-    color:orangered;
-    margin:5px;
+    color: orangered;
+    margin: 5px;
 }
 
 dd {
-    margin-left:50px;
+    margin-left: 50px;
     padding-bottom: 1em;
 }
 
@@ -86,9 +89,9 @@ dd {
 /* Header Formatting             */
 /* ============================= */
 
-header{
-    margin:10px 0 0 10px;
-    padding:10px 0 0 250px;
+header {
+    margin: 10px 0 0 10px;
+    padding: 10px 0 0 250px;
     height: 99px;
     background-image: url(../images/przlogo.gif);
     background-repeat: no-repeat;
@@ -96,18 +99,18 @@ header{
 }
 
 header h1,
-header h2{
-    font-family: Garamond, serif; 
+header h2 {
+    font-family: Garamond, serif;
 }
 
-header h1{
-    font-size:2em;
+header h1 {
+    font-size: 2em;
 }
 
-header h2{
+header h2 {
     font-size: 1.6em;
     text-align: center;
-    font-style:italic;
+    font-style: italic;
 }
 
 
@@ -115,18 +118,20 @@ header h2{
 /* Navigation Formatting         */
 /* ============================= */
 
-nav{
+nav {
     font-family: Gil Sans, Arial, Helvetica, sans-serif;
     font-size: 1.2em;
 }
 
 nav li {
-    padding:5px 1em;
+    display: inline;
+    padding: 5px 1em;
+    border-right: solid thin #40A7A5;
 }
 
-/* right border on main nav list */
-nav>ul{
-    border-right:solid thin #40a7a5;
+/* remove border from last item */
+nav li:last-child {
+    border-right: none;
 }
 
 
@@ -134,38 +139,42 @@ nav>ul{
 /* Main Section Formatting       */
 /* ============================= */
 
-main{
-    padding:20px;
-    background-image:url(../images/prz_watermark.gif);
+main {
+    padding: 20px;
+    background-image: url(../images/prz_watermark.gif);
     background-repeat: no-repeat;
     background-position: center right;
 }
 
 main h1,
 main h2,
-main h3{
+main h3 {
     font-family: Gil Sans, Arial, Helvetica, sans-serif;
-    font-size:1.6em;
 }
 
-main h2{
+main h1 {
+    font-size: 1.6em;
+}
+
+main h2 {
     font-size: 1.3em;
 }
 
-main h3{
+main h3 {
     font-size: 1.1em;
 }
 
 ul.bigger li {
-    font-size:1.2em;
+    font-size: 1.2em;
     padding: 0.5em;
 }
 
-ol{
+ol {
     list-style: upper-roman;
+    padding-bottom: 0.8em;
 }
 
-ol ol{
+ol ol {
     list-style: lower-alpha;
 }
 
@@ -174,15 +183,15 @@ ol ol{
 /* Footer Formatting             */
 /* ============================= */
 
-footer{
+footer {
     background-color: #A1D1D1;
-    padding:15px;
+    padding: 15px;
 }
 
-footer p{
-    font-size:0.8em;
+footer p {
+    font-size: 0.8em;
     font-weight: bold;
-    text-align:center;
+    text-align: center;
     line-height: 1.8em;
-    padding:0;
+    padding: 0;
 }
